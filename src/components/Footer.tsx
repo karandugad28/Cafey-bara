@@ -5,16 +5,16 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const juggleItems = [
-  { src: "/img-webp/lettuce.webp", alt: "lettuce", size: 11, lane: 12 },
-  { src: "/img-webp/tomato.webp", alt: "tomato", size: 9, lane: 34 },
-  { src: "/img-webp/cheese-logo.webp", alt: "cheese", size: 12, lane: 56 },
-  { src: "/img-webp/meat.webp", alt: "patty", size: 13, lane: 80 },
+  { src: "/cafe/matcha-coffee.png", alt: "matcha", size: 11, lane: 12 },
+  { src: "/img-webp/tomato.webp", alt: "pastry", size: 9, lane: 34 },
+  { src: "/cafe/cheesecake.png", alt: "cheesecake", size: 12, lane: 56 },
+  { src: "/cafe/coffee-late.png", alt: "coffee", size: 13, lane: 80 },
 ];
 
 const links = [
   { label: "Home", href: "/" },
-  { label: "Burgers", href: "/menu" },
-  { label: "Spices", href: "/spices" },
+  { label: "Menu", href: "/menu" },
+  { label: "Our Blends", href: "/spices" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -100,9 +100,9 @@ export default function Footer() {
 
       document.addEventListener("visibilitychange", handleVisibility);
 
-      // CRSP big text animation
+      // Capey Bara big text animation
       gsap.fromTo(
-        ".footer-CRSP-char",
+        ".footer-Capey Bara-char",
         { opacity: 0, y: 100, scale: 0.5 },
         {
           opacity: 1,
@@ -139,13 +139,13 @@ export default function Footer() {
           ))}
         </nav>
         <p className="text40 max-md:hidden uppercase opacity-80 font-mouse-memoirs text-black">
-          © {new Date().getFullYear()} CRSP — All rights reserved
+          © {new Date().getFullYear()} Capey Bara — All rights reserved
         </p>
       </div>
 
       <div className="relative z-30 max-md:hidden pt-[1vw] opacity-80 max-md:pt-[4vw] border-t border-black/10">
         <p className="text40 uppercase font-mouse-memoirs text-center text-black/60">
-          Smashed patties · toasted buns · est. 1997
+          Artisan coffee · house-baked treats · est. 1997
         </p>
       </div>
 
@@ -171,8 +171,8 @@ export default function Footer() {
           ))}
         </div>
         <h2 className="heading600 leading-[.5] translate-y-[5vw] max-md:translate-y-0 text-center text-red text-stroke z-10 relative flex justify-center w-full">
-          {["C", "R", "S", "P"].map((char, idx) => (
-            <span key={idx} className="footer-CRSP-char inline-block will-change-transform">
+          {["C", "A", "P", "E", "Y"].map((char, idx) => (
+            <span key={idx} className="footer-Capey Bara-char inline-block will-change-transform">
               {char}
             </span>
           ))}
@@ -181,9 +181,11 @@ export default function Footer() {
 
       <div className="relative z-30 pt-[1vw] max-md:pt-[4vw] md:hidden">
         <p className="text40 uppercase font-mouse-memoirs opacity-80 text-center text-black">
-          © {new Date().getFullYear()} CRSP — All rights reserved
+          © {new Date().getFullYear()} Capey Bara — All rights reserved
         </p>
       </div>
     </footer>
   );
 }
+
+

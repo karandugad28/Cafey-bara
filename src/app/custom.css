@@ -1,13 +1,13 @@
 /* ═══════════════════════════════════════════════════════════════════════
-   CRSP — Custom Design System Utilities (Full Backup Parity)
+   Capey Bara Café — Custom Design System Utilities
    ═══════════════════════════════════════════════════════════════════════ */
 
 /* ── CSS Custom Properties ──────────────────────────────────────────────── */
 :root {
-  --red: #f91814;
+  --red: #1B4F8A;
   --beige: #f5e3cd;
-  --mustard: #ffd750;
-  --mustard-dark: #c99902;
+  --mustard: #D4A853;
+  --mustard-dark: #B08820;
   --black: #1b1b1b;
   --white: #ffffff;
 
@@ -207,7 +207,7 @@ body {
 /* ── Country label ──────────────────────────────────────────────────────── */
 .country-label {
   font-family: var(--font-modak);
-  -webkit-text-stroke: 1px rgba(249, 24, 20, 0.2);
+  -webkit-text-stroke: 1px rgba(27, 79, 138, 0.2);
 }
 
 /* ── Shake animation ────────────────────────────────────────────────────── */
@@ -355,7 +355,7 @@ html.lenis body {
 }
 
 .bg-red\/30 {
-  background-color: rgba(249, 24, 20, 0.30);
+  background-color: rgba(27, 79, 138, 0.30);
 }
 
 .bg-black\/5 {
@@ -419,6 +419,22 @@ html.lenis body {
 ::-webkit-scrollbar-thumb {
   background: var(--red);
   border-radius: 2px;
+}
+
+/* ── Capey Bara logo ──────────────────────────────────────────────────────── */
+.capey-bara-logo {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media not all and (min-width: 1025px) {
+  .capey-bara-logo {
+    width: 10vw;
+    height: 10vw;
+  }
 }
 
 /* ── Selection color ─────────────────────────────────────────────────────── */
@@ -599,4 +615,29 @@ html.lenis body {
   .max-md\:items-center {
     align-items: center;
   }
+}
+
+.font-anton {
+  font-family: var(--font-anton), sans-serif;
+}
+
+.font-playfair {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Retro Checkerboard Pattern based on Instagram vibe */
+.bg-checkerboard {
+  background-color: #f5e3cd;
+  background-image: linear-gradient(45deg, #1b1b1b 25%, transparent 25%, transparent 75%, #1b1b1b 75%, #1b1b1b),
+    linear-gradient(45deg, #1b1b1b 25%, transparent 25%, transparent 75%, #1b1b1b 75%, #1b1b1b);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.bg-checkerboard-red {
+  background-color: #f5e3cd;
+  background-image: linear-gradient(45deg, #C92A2A 25%, transparent 25%, transparent 75%, #C92A2A 75%, #C92A2A),
+    linear-gradient(45deg, #C92A2A 25%, transparent 25%, transparent 75%, #C92A2A 75%, #C92A2A);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
 }

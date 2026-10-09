@@ -194,7 +194,7 @@ export default function Navbar() {
       {/* Navigation Bar */}
       <nav ref={navRef} className="fixed top-0 left-0 w-full z-[999] flex items-center justify-between px-[2.5vw] max-md:px-[4vw] py-[1vw] max-md:py-[4vw]">
         <a
-          className="font-modak hover:scale-105 transition-all duration-300 text-red text-stroke-small text-[4vw] max-md:text-[10vw] leading-none"
+          className="flex items-center gap-[.6vw] max-md:gap-[2vw] hover:scale-105 transition-all duration-300"
           href="/"
           onClick={(e) => {
             if (pathname === "/") {
@@ -203,7 +203,14 @@ export default function Navbar() {
             }
           }}
         >
-          CRSP
+          <img
+            src="/img/capey-bara-logo.jpg"
+            alt="Capey Bara Logo"
+            className="capey-bara-logo"
+          />
+          <span className="font-modak text-red text-stroke-small text-[2.2vw] max-md:text-[7vw] leading-none">
+            Capey Bara
+          </span>
         </a>
         <div className="flex items-center gap-[1vw] max-md:gap-[3vw]">
           <a
@@ -213,13 +220,13 @@ export default function Navbar() {
           >
             <span className="overflow-hidden relative inline-block group">
               <span className="block group-hover:-translate-y-full translate-y-0 transition-all duration-300">
-                Burgers
+                Menu
               </span>
               <span
                 className="block absolute inset-0 w-full h-full group-hover:translate-y-0 translate-y-full transition-all duration-300"
                 aria-hidden="true"
               >
-                Burgers
+                Menu
               </span>
             </span>
           </a>
@@ -270,7 +277,7 @@ export default function Navbar() {
                 {[
                   { label: "Home", href: "/" },
                   { label: "About", href: "/#about" },
-                  { label: "Our Spices", href: "/spices" },
+                  { label: "Our Blends", href: "/gallery" },
                   { label: "Locations", href: "/#map" },
                   { label: "Contact", href: "/contact" },
                 ].map((item) => (
@@ -303,3 +310,5 @@ export default function Navbar() {
     </>
   );
 }
+
+

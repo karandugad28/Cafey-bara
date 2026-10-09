@@ -1,7 +1,7 @@
 {
-    "name": "CRSP Burgers",
-    "short_name": "CRSP",
-    "description": "Artisan Smashed Burgers & Fresh Ingredients",
+    "name": "Capey Bara Cafe",
+    "short_name": "Capey Bara",
+    "description": "Artisan Coffee & Fresh Pastries",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f5e3cd",

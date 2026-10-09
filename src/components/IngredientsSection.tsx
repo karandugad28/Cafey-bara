@@ -72,20 +72,20 @@ export default function IngredientsSection() {
     >
       <div className="h-fit pt-[2vw] relative z-100 space-y-[3vw] w-full max-md:space-y-[6vw]">
         <p className="text-red -rotate-7 max-md:rotate-0 mx-auto uppercase text-stroke-180 text-center text-[2.8vw] max-md:text-[8vw] font-modak leading-[.9]!">
-          Pure quality
+          Pure Craft
         </p>
         <div className="max-md:mt-[10vw] flex flex-col gap-[1vw] w-full items-center justify-center">
           <p className="heading300 mx-auto text-center w-[60vw] max-md:w-full leading-[.75] uppercase text-stroke-180 text-red">
-            <span className="inline-block opacity-0">Every Layer</span>
+            <span className="inline-block opacity-0">Every Sip</span>
           </p>
           <p className="heading300 mx-auto text-center w-[60vw] max-md:w-full leading-[.75] uppercase text-stroke-180 text-red">
-            <span className="inline-block opacity-0">Packed With</span>
+            <span className="inline-block opacity-0">Steeped In</span>
           </p>
           <p className="heading300 mx-auto text-center w-[60vw] max-md:w-full leading-[.75] uppercase text-stroke-180 text-red">
             <span className="inline-block opacity-0">Signature</span>
           </p>
           <p className="heading300 mx-auto text-center w-[60vw] max-md:w-full leading-[.75] uppercase text-stroke-180 text-red">
-            <span className="inline-block opacity-0">Flavor</span>
+            <span className="inline-block opacity-0">Warmth</span>
           </p>
         </div>
         <div
@@ -94,7 +94,7 @@ export default function IngredientsSection() {
           style={{ willChange: "transform" }}
         >
           <img
-            alt="Fresh organic tomato slice"
+            alt="Fresh organic cinnamon spice"
             className="h-full w-full object-contain"
             src="/img-webp/tomato.webp"
           />
@@ -105,9 +105,9 @@ export default function IngredientsSection() {
           style={{ willChange: "transform" }}
         >
           <img
-            alt="Premium cheddar cheese slice"
+            alt="Premium artisan cheesecake"
             className="h-full w-full object-contain"
-            src="/img-webp/cheese.webp"
+            src="/cafe/cheesecake.png"
           />
         </div>
         <div
@@ -116,9 +116,9 @@ export default function IngredientsSection() {
           style={{ willChange: "transform" }}
         >
           <img
-            alt="Smashed artisan beef patty"
+            alt="Artisan matcha coffee blend"
             className="h-full w-full object-contain"
-            src="/img-webp/meat.webp"
+            src="/cafe/matcha-coffee.png"
           />
         </div>
         <div
@@ -127,9 +127,9 @@ export default function IngredientsSection() {
           style={{ willChange: "transform" }}
         >
           <img
-            alt="Crispy garden lettuce leaf"
+            alt="Premium cafe latte with latte art"
             className="h-full w-full object-contain"
-            src="/img-webp/lettuce.webp"
+            src="/cafe/coffee-late.png"
           />
         </div>
       </div>

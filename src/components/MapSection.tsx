@@ -7,11 +7,11 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import JellyDivider from "./JellyDivider";
 
 const desktopLocations = [
-  { src: "/img-webp/berlin.webp", alt: "CRSP Burger takeaway packaging in Berlin", country: "BERLIN", containerClass: "absolute right-[5vw] space-y-[1.5vw] z-[200] top-[50vw] items-end flex flex-col", noteClass: "text-red rotate-7 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/london.webp", alt: "CRSP Burger takeaway packaging in London", country: "LONDON", containerClass: "absolute left-[35vw] space-y-[1.5vw] z-[200] top-[64vw] items-start flex flex-col", noteClass: "text-red -rotate-7 text-left uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/newyork.webp", alt: "CRSP Burger takeaway packaging in New York", country: "NEW YORK", containerClass: "absolute right-[20vw] space-y-[1.5vw] z-[200] top-[80vw] items-end flex flex-col", noteClass: "text-red rotate-12 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/sydney.webp", alt: "CRSP Burger takeaway packaging in Sydney", country: "SYDNEY", containerClass: "absolute left-[15vw] space-y-[1.5vw] z-[200] top-[105vw] items-start flex flex-col", noteClass: "text-red -rotate-12 text-left uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/tokyo.webp", alt: "CRSP Burger takeaway packaging in Tokyo", country: "TOKYO", containerClass: "absolute right-[14vw] space-y-[1.5vw] z-[200] top-[130vw] items-end flex flex-col", noteClass: "text-red rotate-6 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
+  { src: "/img-webp/berlin.webp", alt: "Capey Bara artisan coffee in Berlin", country: "BERLIN", containerClass: "absolute right-[5vw] space-y-[1.5vw] z-[200] top-[50vw] items-end flex flex-col", noteClass: "text-red rotate-7 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
+  { src: "/img-webp/london.webp", alt: "Capey Bara artisan coffee in London", country: "LONDON", containerClass: "absolute left-[35vw] space-y-[1.5vw] z-[200] top-[64vw] items-start flex flex-col", noteClass: "text-red -rotate-7 text-left uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
+  { src: "/img-webp/newyork.webp", alt: "Capey Bara artisan coffee in New York", country: "NEW YORK", containerClass: "absolute right-[20vw] space-y-[1.5vw] z-[200] top-[80vw] items-end flex flex-col", noteClass: "text-red rotate-12 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
+  { src: "/img-webp/sydney.webp", alt: "Capey Bara artisan coffee in Sydney", country: "SYDNEY", containerClass: "absolute left-[15vw] space-y-[1.5vw] z-[200] top-[105vw] items-start flex flex-col", noteClass: "text-red -rotate-12 text-left uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
+  { src: "/img-webp/tokyo.webp", alt: "Capey Bara artisan coffee in Tokyo", country: "TOKYO", containerClass: "absolute right-[14vw] space-y-[1.5vw] z-[200] top-[130vw] items-end flex flex-col", noteClass: "text-red rotate-6 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
 ];
 
 const mobileLocations = [
@@ -243,7 +243,7 @@ export default function MapSection() {
               QUALITY THAT TRAVELS WITH YOU
             </h2>
             <p className="text40 w-[30vw] mx-auto text-black font-mouse-memoirs leading-[1.1] mt-4">
-              Freshly packed smash burgers, ready to go wherever you CRSPe. From our flat-top to any corner of the globe, we ensure every layer stays hot and juicy.
+              Freshly brewed artisan coffee, ready to go wherever you are. From our cozy cafe to any corner of the globe, we bring the warmth of Capey Bara with every cup.
             </p>
           </div>
           {desktopLocations.map((box, idx) => (
@@ -313,3 +313,4 @@ export default function MapSection() {
     </>
   );
 }
+

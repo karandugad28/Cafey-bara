@@ -45,29 +45,29 @@ export default function CheesyDivider() {
     <div className="h-fit -mt-[15vw] max-md:-mt-[10vw] self flex items-center justify-center relative w-full bg-red" data-nav-dark="true">
       <JellyDivider fill="#f5e3cd" />
       <div className="h-fit relative mt-[15vw] max-md:mt-[10vw] flex flex-col items-center justify-center translate-y-[10vw] max-md:translate-y-[5vw] z-10 w-full overflow-hidden pb-[5vw] max-md:pb-[15vw]">
-        <div className="w-[14vw] max-md:w-[25vw] h-auto absolute top-[5vw] max-md:top-[30vw] left-[5vw] max-md:-left-[4vw] z-50">
-          <Sticker imageSrc="/img-webp/fries.webp" alt="Fries" rotate={0} />
+        <div className="w-[18vw] max-md:w-[25vw] h-auto absolute top-[5vw] max-md:top-[30vw] left-[5vw] max-md:-left-[4vw] z-50 drop-shadow-xl">
+          <img src="/cafe/frappe-sticker-clear.png" alt="Cartoon frappuccino character" className="w-full h-auto" />
         </div>
-        <div className="w-[18vw] max-md:w-[35vw] h-auto absolute top-[20vw] max-md:top-[35vw] right-[2vw] max-md:-right-[6vw] z-50">
-          <Sticker imageSrc="/img-webp/burger.webp" alt="Burger" rotate={0} />
+        <div className="w-[18vw] max-md:w-[35vw] h-auto absolute top-[20vw] max-md:top-[35vw] right-[2vw] max-md:-right-[6vw] z-50 drop-shadow-xl">
+          <img src="/cafe/coffee-sticker-clear.png" alt="Cartoon coffee cup character" className="w-full h-auto" />
         </div>
         <div className="relative z-20 w-full flex flex-col items-center">
           <p className="text-red absolute -rotate-8 max-md:rotate-0 text-stroke-180 text-center top-[5vw] max-md:top-[6vw] left-1/2 -translate-x-1/2 text-[2.8vw] max-md:text-[7vw] font-modak leading-[.9]! z-0 mix-blend-overlay opacity-80">
-            EXPERIENCE
+            THE MOMENT
           </p>
           <h2 className="text-center heading300 uppercase max-md:text-[14vw] leading-[.75] w-full text-beige relative z-20 mt-[10vw] max-md:mt-[15vw]">
-            <span>food that <br /> feels good</span>
+            <span>sip that<br />feels good</span>
           </h2>
         </div>
         <div className="flex items-end justify-between w-full px-0 max-md:px-[4vw] max-md:flex-col max-md:items-center relative max-md:mt-[15vw]">
           <div className="max-md:absolute max-md:bottom-[-15vw] max-md:left-0 z-20 max-md:text-left">
             <p className="text-beige whitespace-nowrap font-mouse-memoirs uppercase leading-[1.1] text40 max-md:text-[6vw]">
               <span>
-                450 kcal
+                200 kcal
                 <br />
-                High Protein
+                Rich in Antioxidants
                 <br />
-                Fresh Ingredients
+                Ethically Sourced
               </span>
             </p>
           </div>
@@ -105,13 +105,13 @@ export default function CheesyDivider() {
             </div>
 
             <img
-              alt="burger with hands"
-              className="h-full w-full object-contain relative z-10"
-              src="/img-webp/burgerwithhands.webp"
+              alt="pizza with cartoon hands"
+              className="h-full w-full object-contain relative z-10 scale-125 translate-y-[2vw]"
+              src="/cafe/pizza-with-hands.png"
               onLoad={() => ScrollTrigger.refresh()}
             />
             <p className="text-mustard-dark absolute rotate-15 text-stroke-180 w-[10vw] max-md:w-[22vw] text-center bottom-[10vw] max-md:bottom-[10vw] right-[10vw] max-md:right-[8vw] text-[2.8vw] max-md:text-[6vw] font-modak leading-[.9]! z-30">
-              BOLD FLAVOUR
+              RICH AROMA
             </p>
           </div>
           <div className="max-md:absolute max-md:bottom-[-15vw] max-md:right-0 z-20 max-md:text-right">
@@ -130,3 +130,4 @@ export default function CheesyDivider() {
     </div>
   );
 }
+

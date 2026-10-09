@@ -233,60 +233,60 @@ export default function HomePage() {
         >
           <div className="w-fit h-fit relative">
             <h1 className="text-[30vw] leading-[.8] text-center text-red text-stroke-180 font-mouse-memoirs max-md:text-[26vw] max-md:leading-[.85]">
-              <span className="sr-only">THE BURGER</span>
+              <span className="sr-only">THE CAFE</span>
               <span aria-hidden="true" className="inline-block">
                 <span className="inline-block will-change-transform">THE</span>{" "}
-                <span className="inline-block will-change-transform">BURGER</span>
+                <span className="inline-block will-change-transform">CAFÉ</span>
               </span>
             </h1>
             <p className="absolute top-[10%] left-[10%] text-mustard-dark z-10 rotate-15 max-md:rotate-0 max-md:top-[2%] max-md:left-[2%] text-stroke-180 text-center text-[2.8vw] font-modak leading-[.9]! max-md:text-[6vw]">
-              <span className="sr-only">SMASHED FRESH</span>
+              <span className="sr-only">BREWED FRESH</span>
               <span aria-hidden="true">
-                <span className="inline-block">SMASHED</span>
+                <span className="inline-block">BREWED</span>
                 <br />
                 <span className="inline-block">FRESH</span>
               </span>
             </p>
             <p className="absolute bottom-[10%] right-[10%] text-mustard-dark z-10 -rotate-15 max-md:rotate-0 max-md:bottom-[2%] max-md:right-[2%] text-stroke-180 text-center text-[2.8vw] font-modak leading-[.9]! max-md:text-[6vw]">
-              <span className="sr-only">BOLD FLAVOR</span>
+              <span className="sr-only">RICH AROMA</span>
               <span aria-hidden="true">
-                <span className="inline-block">BOLD</span>
+                <span className="inline-block">RICH</span>
                 <br />
-                <span className="inline-block">FLAVOR</span>
+                <span className="inline-block">AROMA</span>
               </span>
             </p>
           </div>
 
-          {/* Rotating burger image */}
+          {/* Floating hero image */}
           <div className="size-[40vw] z-20 absolute top-[60%] -translate-y-[60%] left-1/2 -translate-x-1/2 max-md:size-[80vw] max-md:top-[110vw] max-md:-translate-y-[50%]">
             <div ref={burgerImgRef} className="w-full h-full opacity-0">
               <img
-                alt="CRSP Artisan Smashed Burger with fresh ingredients"
+                alt="Capey Bara artisan coffee with fresh pastry"
                 className="h-full w-full object-contain"
-                src="/img-webp/burgerH.webp"
+                src="/cafe/coffee-late.png"
               />
             </div>
           </div>
 
-          <p className="text-center text-[15vw] max-md:text-[20vw] font-modak uppercase mt-[15vw] relative z-20 max-md:z-20 text-stroke-180 text-[#F4A804] translate-y-[-9vw] max-md:mt-[6vw] max-md:absolute max-md:top-[133vw] max-md:-translate-y-1/2">
-            <span className="sr-only">CRSP</span>
+          <p className="text-center text-[7vw] max-md:text-[14vw] font-modak uppercase mt-[8vw] relative z-20 max-md:z-20 text-stroke-180 text-[#D4A853] translate-y-[-5vw] max-md:mt-[6vw] max-md:absolute max-md:top-[133vw] max-md:-translate-y-1/2">
+            <span className="sr-only">CAPEY BARA</span>
             <span aria-hidden="true">
-              <span className="inline-block">CRSP</span>
+              <span className="inline-block">CAPEY BARA</span>
             </span>
           </p>
 
           <div className="w-full absolute bottom-0 left-0 flex justify-between px-[2.5vw] py-[2vw] max-md:static max-md:flex-col max-md:gap-[4vw] max-md:items-center max-md:px-[5vw] max-md:py-0">
-            <div className="w-[23vw] max-md:w-full">
+            <div className="w-[20vw] max-md:w-full">
               <p className="text40 leading-none max-md:text-center">
                 <span className="inline-block opacity-0">
-                  Smashed hot on the flat top, our prime patties lock in ultimate juiciness under a caramelized crust.
+                  Poured slow and brewed with care, our single-origin beans are crafted to awaken your senses with every sip.
                 </span>
               </p>
             </div>
-            <div className="w-[23vw] max-md:w-full">
+            <div className="w-[20vw] max-md:w-full">
               <p className="text40 leading-none text-right max-md:text-center">
                 <span className="inline-block opacity-0">
-                  Topped with melted cheddar and our signature chili honey glaze crafted to satisfy your CRSPings since 1997.
+                  Paired with house-baked pastries and our signature golden roast, crafted to satisfy your cravings since 1997.
                 </span>
               </p>
             </div>
@@ -297,23 +297,23 @@ export default function HomePage() {
         <section
           ref={aboutRef}
           id="about"
-          className="h-fit overflow-clip self relative z-100 text-center space-y-[2vw] w-full max-md:space-y-[6vw] py-[6vw]"
+          className="h-fit overflow-clip self relative z-100 text-center space-y-[2vw] w-full max-md:space-y-[6vw] py-[6vw] bg-beige"
         >
           <div className="space-y-[1vw] relative max-md:space-y-[6vw]">
             <p className="text-red z-100 max-md:rotate-0 relative top-[-1vw] max-md:top-0 -rotate-5 text-stroke-180 w-full text-center mx-auto text-[2.8vw] font-modak leading-[.9]! max-md:text-[8vw] max-md:w-fit max-md:mx-auto">
-              TOP CLASSIC
+              TOP SELECTION
             </p>
-            <h2 className="text-stroke-180 max-md:w-full w-[70%] text-center mx-auto leading-[.75]! text-red heading300 uppercase">
-              <span className="sr-only">juicy cheesy fully Loaded</span>
+            <h2 className="text-stroke-180 max-md:w-full w-[70%] text-center mx-auto leading-[1.1]! text-red heading300 uppercase">
+              <span className="sr-only">warm rich deeply roasted</span>
               <span aria-hidden="true">
-                <span className="inline-block">juicy</span>{" "}
-                <span className="inline-block">cheesy</span>{" "}
-                <span className="inline-block">fully</span>{" "}
-                <span className="inline-block">Loaded</span>
+                <span className="inline-block">warm</span>{" "}
+                <span className="inline-block">rich</span>{" "}
+                <span className="inline-block">deeply</span>{" "}
+                <span className="inline-block">Roasted</span>
               </span>
             </h2>
             <p className="text-black text40 w-[45%] mt-[2vw] leading-[1.1] mx-auto max-md:w-[90%]">
-              CRSP is back and bolder than ever. Honoring our rich roots, we bring you the ultimate smashed experience fully loaded, hot, and crafted fresh.
+              Capey Bara is back and bolder than ever. Honoring our rich roots, we bring you the ultimate café experience — warm, aromatic, and crafted with love.
             </p>
           </div>
 
@@ -322,29 +322,29 @@ export default function HomePage() {
           </div>
 
           <div className="relative grid h-fit w-full place-items-center px-[10vw] pb-[6vw] max-md:px-[4vw] max-md:pb-[12vw]">
-            <div className="absolute w-[15vw] max-md:w-[25vw] h-auto top-[-13vw] max-md:top-[-30vw] left-[5vw] max-md:-left-[4vw] z-50 drop-shadow-xl">
-              <Sticker imageSrc="/img/burgerselfie.png" alt="Burger Selfie Sticker" rotate={0} />
+            <div className="absolute w-[18vw] max-md:w-[28vw] h-auto top-[-18vw] max-md:top-[-12vw] left-[2vw] max-md:-left-[2vw] z-50 -rotate-12 mix-blend-multiply">
+              <img src="/cafe/coffee-selfie-clean.jpg" alt="Coffee cup selfie sticker" className="w-full h-auto" />
             </div>
             <div className="grid grid-cols-3 gap-[1vw] justify-center mx-auto max-w-[70vw] max-md:flex max-md:flex-row max-md:flex-nowrap max-md:items-end max-md:justify-center max-md:gap-[2vw] max-md:w-full max-md:pt-[4vw] max-md:pb-[2vw]">
               <div className="h-[25vw] w-[20vw] rounded-[4%] overflow-hidden media-item max-md:origin-bottom max-md:w-[35vw] max-md:h-[38vw] max-md:shrink-0 md:rotate-[5deg] max-md:-rotate-12 max-md:translate-y-[3vw]" style={{ willChange: 'transform', cursor: 'pointer' }}>
                 <img
-                  alt="Chef preparing a fresh smashed burger"
+                  alt="Barista preparing artisan coffee"
                   className="h-full w-full object-cover"
-                  src="/img-webp/about-1.webp"
+                  src="/cafe/2.jpg"
                 />
               </div>
               <div className="h-[25vw] w-[20vw] rounded-[4%] overflow-hidden media-item max-md:origin-bottom max-md:w-[35vw] max-md:h-[38vw] max-md:shrink-0 md:rotate-[-5deg] max-md:-translate-y-[6vw] max-md:z-10" style={{ willChange: 'transform', cursor: 'pointer' }}>
                 <img
-                  alt="Close-up of melted cheese on a burger patty"
+                  alt="Close-up of latte art on a coffee cup"
                   className="h-full w-full object-cover"
-                  src="/img-webp/about-2.webp"
+                  src="/cafe/5.jpg"
                 />
               </div>
               <div className="h-[25vw] w-[20vw] rounded-[4%] overflow-hidden media-item max-md:origin-bottom max-md:w-[35vw] max-md:h-[38vw] max-md:shrink-0 md:rotate-[8deg] max-md:rotate-12 max-md:translate-y-[3vw]" style={{ willChange: 'transform', cursor: 'pointer' }}>
                 <img
-                  alt="CRSP restaurant atmosphere"
+                  alt="Capey Bara café cozy interior atmosphere"
                   className="h-full w-full object-cover"
-                  src="/img-webp/about-3.webp"
+                  src="/cafe/8.jpg"
                 />
               </div>
             </div>
@@ -355,44 +355,21 @@ export default function HomePage() {
         <CheesyDivider />
 
         {/* ── 4. Dripping Cheese Full Image ─────────────────────────────── */}
-        <div className="h-[160vh] max-md:h-[70vh] w-full relative">
-          <div className="z-99 w-full absolute left-0 right-0 overflow-x-clip max-md:left-0 max-md:right-0 top-0">
-            <svg
-              className="jelly pointer-events-none block w-full max-w-[100vw] h-[300px] max-md:h-auto"
-              width="100%"
-              viewBox="0 0 1536 300"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M1536,0 H-1 V135 S184.32,65 460.8,155 S860.16,105 1121.28,137 S1413.12,105 1536,105 V0"
-                fill="#f91814"
-              ></path>
-            </svg>
-          </div>
-          <div className="z-99 w-full absolute left-0 right-0 overflow-x-clip max-md:left-0 max-md:right-0 bottom-[-.5vw] max-md:bottom-0 max-md:!bottom-[-7vw]">
-            <svg
-              className="jelly pointer-events-none block w-full max-w-[100vw] h-[300px] max-md:h-auto"
-              width="100%"
-              viewBox="0 0 1536 300"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M1536,300 H-1 V135 S184.32,235 460.8,145 S860.16,195 1121.28,163 S1413.12,195 1536,195 V300"
-                fill="#f5e3cd"
-              ></path>
-            </svg>
-          </div>
-          <img
-            alt="CRSP Signature Cheesy Burger with dripping cheese"
-            className="h-full w-full object-cover"
-            src="/img-webp/cheesyBurger.webp"
-          />
+        <div className="w-full relative z-50 -mt-[2px] max-md:-mt-[1px]">
+          <svg
+            className="jelly pointer-events-none block w-full max-w-[100vw] h-[300px] max-md:h-auto"
+            width="100%"
+            viewBox="0 0 1536 300"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M1536,0 H-1 V135 S184.32,65 460.8,155 S860.16,105 1121.28,137 S1413.12,105 1536,105 V0"
+              fill="#1B4F8A"
+            ></path>
+          </svg>
         </div>
 
         {/* ── 5. Ingredients Section ────────────────────────────────────── */}
@@ -419,23 +396,23 @@ export default function HomePage() {
             >
               <path
                 d="M1536,0 H-1 V135 S184.32,65 460.8,155 S860.16,105 1121.28,137 S1413.12,105 1536,105 V0"
-                fill="#ffd750"
+                fill="#D4A853"
               ></path>
             </svg>
           </div>
           <div className="h-screen my-[8vw] mt-0 flex items-center justify-center w-full relative max-md:my-[2vw] max-md:mt-0 max-md:h-fit max-md:flex-col max-md:gap-0 max-md:px-[2vw]">
             <div className="absolute z-222 bottom-[1vw] max-md:bottom-[65vw] max-md:left-[2vw] max-md:translate-x-0! -rotate-45 left-1/2 -translate-x-1/2 w-[35vw] h-auto max-md:w-[70vw] object-contain max-md:mb-[4vw]">
-              <Sticker imageSrc="/img/burger-boy.png" alt="Burger Boy Sticker" rotate={0} />
+              <Sticker imageSrc="/cafe/coffee-late.png" alt="Coffee Latte Sticker" rotate={0} />
             </div>
             <div className="w-[60vw] flex items-start gap-[2vw] justify-center flex-col self h-full max-md:w-full max-md:gap-[4vw] max-md:items-center max-md:h-fit px-[5vw]">
               <p className="text-red -rotate-7 ml-[.5vw] uppercase text-stroke-180 font-modak leading-[.9]! text60 max-md:rotate-0 max-md:ml-0 max-md:translate-y-0 max-md:text-center">
-                FEEL IT
+                TASTE IT
               </p>
               <h2 className="text-red text-stroke-180 heading300 uppercase leading-[.75] max-md:leading-[.85]! max-md:text-[10vw] max-md:text-center">
-                feel the Change
+                feel the Warmth
               </h2>
               <p className="text40 w-[35vw] font-mouse-memoirs leading-[1.1] max-md:w-full max-md:text-[4vw] max-md:text-center text-black/80">
-                Smashed for the bold, built for the hungry. Dive into a legendary craft experience where every crispy edge and juicy layer rules.
+                Poured for the bold, brewed for the cozy. Dive into a legendary café experience where every aromatic sip and house-baked bite warms your soul.
               </p>
               <div className="max-md:w-full max-md:flex max-md:justify-center pt-[2vw]">
                 <Button href="/menu" className="hover:scale-105 transition-transform">
@@ -444,7 +421,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="w-[45vw] rounded-[2vw] overflow-hidden h-[60vw] max-md:w-full max-md:h-[40vh] max-md:min-h-[40vw] max-md:rounded-[4vw] shadow-2xl">
-              <img alt="Premium smashed burger on a wooden board" className="h-full w-full object-cover" src="/img-webp/cta.webp" />
+              <img alt="Capey Bara barista crafting premium coffee" className="h-full w-full object-cover" src="/cafe/coffee3.jpg" />
             </div>
           </div>
         </section>
@@ -455,3 +432,7 @@ export default function HomePage() {
     </>
   );
 }
+
+
+
+

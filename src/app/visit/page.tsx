@@ -74,8 +74,8 @@ export default function ContactPage() {
         </div>
         <div className="w-[25vw] max-md:hidden h-auto absolute top-[20vw] right-[2vw] z-50 animate-bounce duration-[1500ms] pointer-events-none">
           <img
-            src="/img-webp/burger.webp"
-            alt="Burger sticker"
+            src="/cafe/coffee-late.png"
+            alt="Coffee sticker"
             className="w-full h-auto rotate-[15deg] hover:scale-105 transition-all duration-300"
           />
         </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
               SAY HELLO
             </p>
             <h1 className="text-center text-stroke-180 text-beige relative z-20 font-mouse-memoirs text-[5vw] max-md:text-[12vw] leading-[.8] uppercase tracking-wider">
-              GOT A CRSPING?<br />LET'S TALK
+              GOT A CRAVING?<br />LET'S TALK
             </h1>
           </div>
 
@@ -125,7 +125,7 @@ export default function ContactPage() {
                 maxLength={100}
                 value={message}
                 onChange={handleInputChange}
-                placeholder="TELL US YOUR CRSPING..."
+                placeholder="TELL US YOUR CRAVING..."
                 className={`w-full bg-transparent border-b outline-none py-[1vw] max-md:py-[3vw] font-mouse-memoirs text-[1.5vw] max-md:text-[5vw] text-white transition-all duration-300 placeholder:text-white/30 uppercase tracking-widest resize-none min-h-[5vw] max-md:min-h-[15vw] ${errors.message ? "border-mustard" : "border-white/20 focus:border-mustard"
                   }`}
               />
@@ -143,7 +143,7 @@ export default function ContactPage() {
                 disabled={status === "sending"}
                 className="w-full py-[1vw] max-md:py-[3vw] rounded-full border-[0.15vw] border-white/20 text-white font-mouse-memoirs uppercase text-[1.5vw] max-md:text-[5vw] tracking-wider transition-all duration-300 bg-transparent hover:bg-white hover:text-red cursor-pointer flex items-center justify-center disabled:opacity-50"
               >
-                {status === "sending" ? "SENDING..." : "SEND CRSPING"}
+                {status === "sending" ? "SENDING..." : "SEND CRAVING"}
               </button>
             </div>
           </form>
@@ -176,3 +176,4 @@ export default function ContactPage() {
     </>
   );
 }
+
