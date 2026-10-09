@@ -3,7 +3,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform, useAnimationFrame } from "framer-motion";
 
-const images = Array.from({ length: 12 }).map((_, i) => /cafe/ + (i + 1) + .jpg);
+const images = Array.from({ length: 12 }).map((_, i) => `/cafe/${i + 1}.jpg`);
 
 export default function DomeGallery() {
   const dragX = useMotionValue(0);
