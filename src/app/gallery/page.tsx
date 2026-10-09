@@ -66,7 +66,7 @@ export default function GalleryPage() {
         </FullPageScroll>
       </main>
 
-      <style jsx global>{
+      <style jsx global>{`
         @keyframes marquee {
           0% { transform: translateX(0%); }
           100% { transform: translateX(-50%); }
@@ -86,7 +86,7 @@ export default function GalleryPage() {
           width: 0px;
           background: transparent;
         }
-      }</style>
+      `}</style>
     </>
   );
 }
