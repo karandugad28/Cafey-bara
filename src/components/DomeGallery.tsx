@@ -55,7 +55,7 @@ export default function DomeGallery() {
               key={i}
               className="absolute w-[22vw] h-[32vw] max-w-[320px] max-h-[460px] min-w-[200px] min-h-[300px] rounded-[16px] overflow-hidden shadow-2xl border border-white/10 bg-black/50"
               style={{
-                transform: otateY( + rotate + deg) translateZ( + radius + px),
+                transform: `rotateY(${rotate}deg) translateZ(${radius}px)`,
                 backfaceVisibility: "visible", // let user see the back images too for depth
               }}
             >
