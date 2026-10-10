@@ -28,19 +28,13 @@ const PHOTOS = [
   { src: "/12.jpg", alt: "Gallery Image 12" },
 ];
 
-const SECTION_LABELS = ["Gallery", "Connect", "Footer"];
-const SECTION_SUB_STEPS = [1, 1, 1];
-
 export default function GalleryPage() {
   return (
     <>
       <Cursor />
       <Navbar />
       <div className="h-screen overflow-hidden">
-        <FullPageScroll
-          sectionLabels={SECTION_LABELS}
-          sectionSubSteps={SECTION_SUB_STEPS}
-        >
+        <FullPageScroll>
           {/* Section 1 */}
           <main data-nav-dark="true" className="relative w-full h-screen shrink-0 bg-[#0a0a0a] overflow-hidden">
             {/* Background Watermark Strips */}
