@@ -83,7 +83,7 @@ export default function ContactPage() {
         {/* Content Box */}
         <div className="relative z-10 flex flex-col items-center justify-between gap-[2vw] max-md:gap-[8vw] w-full max-w-[45vw] max-md:max-w-full text-center mt-[4vw]">
           <div className="relative z-20 gap-[2vw] w-full flex flex-col items-center">
-            <p className="-rotate-9 max-md:rotate-0 text-mustard-dark text-stroke-180 text-center text-[2.8vw] font-modak leading-[.9]! max-md:text-[8vw] uppercase">
+            <p className="-rotate-9 max-md:rotate-0 text-mustard-dark text-stroke-180 text-center text-[2.8vw] font-playfair leading-[.9]! max-md:text-[8vw] uppercase">
               SAY HELLO
             </p>
             <h1 className="text-center text-stroke-180 text-beige relative z-20 font-mouse-memoirs text-[5vw] max-md:text-[12vw] leading-[.8] uppercase tracking-wider">
@@ -156,7 +156,7 @@ export default function ContactPage() {
               <span className="inline-block px-[1vw] max-md:px-[3vw] py-[.4vw] rounded-full bg-red text-white font-mouse-memoirs text-[0.8vw] max-md:text-[3vw] tracking-widest uppercase">
                 Notice
               </span>
-              <h2 className="font-modak text-[2vw] max-md:text-[6vw] text-red leading-none uppercase">
+              <h2 className="font-playfair text-[2vw] max-md:text-[6vw] text-red leading-none uppercase">
                 Concept Website
               </h2>
               <p className="font-mouse-memoirs text-[1.2vw] max-md:text-[4vw] text-black/70 leading-[1.4] uppercase">

@@ -60,8 +60,10 @@ export default function Navbar() {
     const darkSections = document.querySelectorAll('[data-nav-dark="true"]');
     const triggers: ScrollTrigger[] = [];
     darkSections.forEach((sec) => {
+      const scrollContainer = sec.closest('[data-lenis-prevent="true"]') || window;
       const st = ScrollTrigger.create({
         trigger: sec,
+        scroller: scrollContainer,
         start: "top 5%",
         end: "bottom 5%",
         onEnter: () => setNavDark(true),
@@ -208,15 +210,17 @@ export default function Navbar() {
             alt="Capey Bara Logo"
             className="capey-bara-logo"
           />
-          <span className="font-modak text-red text-stroke-small text-[2.2vw] max-md:text-[7vw] leading-none">
+          <span className="font-playfair font-medium tracking-tight text-red text-[2.2vw] max-md:text-[7vw] leading-none">
             Capey Bara
           </span>
         </a>
         <div className="flex items-center gap-[1vw] max-md:gap-[3vw]">
           <a
-            className="font-mouse-memoirs hover:scale-105 transition-all duration-300 flex items-center justify-center text-[1.3vw] max-md:text-[4vw] uppercase tracking-wide text-beige bg-red px-[1.6vw] py-[.5vw] max-md:px-[5vw] max-md:py-[1.8vw] group rounded-full hover:bg-black"
+            className="font-mouse-memoirs hover:scale-105 transition-all duration-300 flex items-center justify-center text-xs md:text-sm uppercase tracking-widest text-beige bg-red px-[1.6vw] py-[.5vw] max-md:px-[5vw] max-md:py-[1.8vw] group rounded-full hover:bg-black"
             data-cursor-hide="true"
-            href="/menu"
+            href="/menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span className="overflow-hidden relative inline-block group">
               <span className="block group-hover:-translate-y-full translate-y-0 transition-all duration-300">
@@ -243,7 +247,7 @@ export default function Navbar() {
               aria-expanded={menuOpen}
               aria-controls="main-menu"
             >
-              <span className={`font-mouse-memoirs flex items-center justify-center uppercase text-[1.3vw] max-md:text-[4vw] tracking-wide transition-colors duration-300 ${menuOpen ? "text-beige" : navDark ? "text-white" : "text-black"
+              <span className={`font-mouse-memoirs flex items-center justify-center uppercase text-xs md:text-sm tracking-widest transition-colors duration-300 ${menuOpen ? "text-beige" : navDark ? "text-white" : "text-black"
                 }`}>
                 <span className="overflow-hidden relative inline-block group">
                   <span className="block group-hover:-translate-y-full translate-y-0 transition-all duration-300">
@@ -277,14 +281,14 @@ export default function Navbar() {
                 {[
                   { label: "Home", href: "/" },
                   { label: "About", href: "/#about" },
-                  { label: "Our Blends", href: "/gallery" },
+                  { label: "Gallery", href: "/gallery" },
                   { label: "Locations", href: "/#map" },
                   { label: "Contact", href: "/contact" },
                 ].map((item) => (
                   <a
                     key={item.label}
                     role="menuitem"
-                    className="font-modak text-[2.4vw] max-md:text-[8vw] text-beige leading-[1.1] uppercase hover:text-mustard hover:scale-105 transition-transform duration-300 transform inline-block"
+                    className="font-playfair italic text-[2.4vw] max-md:text-[8vw] text-beige leading-[1.1] hover:text-mustard hover:scale-105 transition-transform duration-300 transform inline-block"
                     href={item.href.startsWith("#") ? "/" : item.href}
                     onClick={(e) => {
                       if (item.href.startsWith("/#") || item.href.startsWith("#")) {
@@ -299,7 +303,7 @@ export default function Navbar() {
                 ))}
               </div>
               <div className="mt-[1.5vw] max-md:mt-[4vw] pt-[1vw] max-md:pt-[3vw] border-t border-beige/20">
-                <p className="font-mouse-memoirs text-[.9vw] max-md:text-[3.5vw] text-beige/85 uppercase tracking-[.2em]">
+                <p className="font-mouse-memoirs italic text-lg max-md:text-xl text-beige/85 tracking-wide">
                   Est. 1997 — Navarra, España
                 </p>
               </div>

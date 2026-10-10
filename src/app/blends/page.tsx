@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Navbar from "@/components/Navbar";
@@ -51,7 +51,7 @@ export default function BlendsPage() {
         <section className="w-full relative z-20 h-fit mb-[5vw] self">
           <div className="flex relative z-10 justify-between items-end max-md:flex-col max-md:items-start max-md:gap-[2vw]">
             <div className="space-y-[1vw] w-fit">
-              <p className="text-mustard-dark -rotate-7 ml-[1vw] -translate-y-[2vw] uppercase text-stroke-180 text60 max-md:rotate-0 font-modak leading-[.9]! max-md:text-[8vw]">
+              <p className="text-mustard-dark -rotate-7 ml-[1vw] -translate-y-[2vw] uppercase text-stroke-180 text60 max-md:rotate-0 font-playfair leading-[.9]! max-md:text-[8vw]">
                 Secret Beans
               </p>
               <h1 className="text-red text-stroke-180-menu heading300 uppercase leading-[.75] max-md:leading-[.85] max-md:text-[9vw]">
@@ -77,7 +77,7 @@ export default function BlendsPage() {
                   <span className={`inline-block px-[0.8vw] py-[0.3vw] max-md:px-[3vw] max-md:py-[1.2vw] rounded-full text-[0.8vw] max-md:text-[2.8vw] font-mouse-memoirs uppercase tracking-widest ${blend.color}`}>
                     {blend.type}
                   </span>
-                  <h2 className="font-modak text-red text-2xl max-md:text-[6vw] leading-[1.1] uppercase mt-[1.5vw] max-md:mt-[4vw]">
+                  <h2 className="font-playfair text-red text-2xl max-md:text-[6vw] leading-[1.1] uppercase mt-[1.5vw] max-md:mt-[4vw]">
                     {blend.name}
                   </h2>
                   <p className="font-mouse-memoirs text-[1vw] max-md:text-[3.8vw] text-black/80 leading-[1.3] uppercase mt-[1vw] max-md:mt-[3vw]">
@@ -94,7 +94,9 @@ export default function BlendsPage() {
 
           <div className="mt-[6vw] max-md:mt-[10vw] flex justify-center">
             <a
-              href="/menu"
+              href="/menu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-[3vw] py-[1vw] max-md:px-[8vw] max-md:py-[3vw] bg-red text-beige font-mouse-memoirs uppercase text-[1.5vw] max-md:text-[5vw] rounded-full hover:scale-105 transition-transform duration-300"
             >
               Explore Our Blends

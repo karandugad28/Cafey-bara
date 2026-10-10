@@ -221,7 +221,7 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="relative w-full h-full">
+      <main className="main-content relative z-10 w-full bg-beige rounded-b-[2vw] shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden">
         <Navbar />
 
         {/* ── 1. Hero Section ───────────────────────────────────────────── */}
@@ -232,29 +232,15 @@ export default function HomePage() {
           className="h-screen w-full relative flex flex-col justify-between items-center pt-[8vw] max-md:pt-[40vw] max-md:h-[200vw] max-md:pb-[2vw]"
         >
           <div className="w-fit h-fit relative">
-            <h1 className="text-[30vw] leading-[.8] text-center text-red text-stroke-180 font-mouse-memoirs max-md:text-[26vw] max-md:leading-[.85]">
+            <h1 className="text-[30vw] leading-[.8] text-center text-red text-stroke-180 font-anton max-md:text-[26vw] max-md:leading-[.85]">
               <span className="sr-only">THE CAFE</span>
               <span aria-hidden="true" className="inline-block">
                 <span className="inline-block will-change-transform">THE</span>{" "}
                 <span className="inline-block will-change-transform">CAFÉ</span>
               </span>
             </h1>
-            <p className="absolute top-[10%] left-[10%] text-mustard-dark z-10 rotate-15 max-md:rotate-0 max-md:top-[2%] max-md:left-[2%] text-stroke-180 text-center text-[2.8vw] font-modak leading-[.9]! max-md:text-[6vw]">
-              <span className="sr-only">BREWED FRESH</span>
-              <span aria-hidden="true">
-                <span className="inline-block">BREWED</span>
-                <br />
-                <span className="inline-block">FRESH</span>
-              </span>
-            </p>
-            <p className="absolute bottom-[10%] right-[10%] text-mustard-dark z-10 -rotate-15 max-md:rotate-0 max-md:bottom-[2%] max-md:right-[2%] text-stroke-180 text-center text-[2.8vw] font-modak leading-[.9]! max-md:text-[6vw]">
-              <span className="sr-only">RICH AROMA</span>
-              <span aria-hidden="true">
-                <span className="inline-block">RICH</span>
-                <br />
-                <span className="inline-block">AROMA</span>
-              </span>
-            </p>
+
+
           </div>
 
           {/* Floating hero image */}
@@ -268,7 +254,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <p className="text-center text-[7vw] max-md:text-[14vw] font-modak uppercase mt-[8vw] relative z-20 max-md:z-20 text-stroke-180 text-[#D4A853] translate-y-[-5vw] max-md:mt-[6vw] max-md:absolute max-md:top-[133vw] max-md:-translate-y-1/2">
+          <p className="text-center text-[7vw] max-md:text-[14vw] font-playfair uppercase mt-[8vw] relative z-20 max-md:z-20 text-stroke-180 text-[#D4A853] translate-y-[-5vw] max-md:mt-[6vw] max-md:absolute max-md:top-[133vw] max-md:-translate-y-1/2">
             <span className="sr-only">CAPEY BARA</span>
             <span aria-hidden="true">
               <span className="inline-block">CAPEY BARA</span>
@@ -277,14 +263,14 @@ export default function HomePage() {
 
           <div className="w-full absolute bottom-0 left-0 flex justify-between px-[2.5vw] py-[2vw] max-md:static max-md:flex-col max-md:gap-[4vw] max-md:items-center max-md:px-[5vw] max-md:py-0">
             <div className="w-[20vw] max-md:w-full">
-              <p className="text40 leading-none max-md:text-center">
+              <p className="text40 leading-none max-md:text-center font-oswald">
                 <span className="inline-block opacity-0">
                   Poured slow and brewed with care, our single-origin beans are crafted to awaken your senses with every sip.
                 </span>
               </p>
             </div>
             <div className="w-[20vw] max-md:w-full">
-              <p className="text40 leading-none text-right max-md:text-center">
+              <p className="text40 leading-none text-right max-md:text-center font-oswald">
                 <span className="inline-block opacity-0">
                   Paired with house-baked pastries and our signature golden roast, crafted to satisfy your cravings since 1997.
                 </span>
@@ -300,7 +286,7 @@ export default function HomePage() {
           className="h-fit overflow-clip self relative z-100 text-center space-y-[2vw] w-full max-md:space-y-[6vw] py-[6vw] bg-beige"
         >
           <div className="space-y-[1vw] relative max-md:space-y-[6vw]">
-            <p className="text-red z-100 max-md:rotate-0 relative top-[-1vw] max-md:top-0 -rotate-5 text-stroke-180 w-full text-center mx-auto text-[2.8vw] font-modak leading-[.9]! max-md:text-[8vw] max-md:w-fit max-md:mx-auto">
+            <p className="text-red z-100 max-md:rotate-0 relative top-[-1vw] max-md:top-0 -rotate-5 text-stroke-180 w-full text-center mx-auto text-[2.8vw] font-playfair leading-[.9]! max-md:text-[8vw] max-md:w-fit max-md:mx-auto">
               TOP SELECTION
             </p>
             <h2 className="text-stroke-180 max-md:w-full w-[70%] text-center mx-auto leading-[1.1]! text-red heading300 uppercase">
@@ -312,13 +298,13 @@ export default function HomePage() {
                 <span className="inline-block">Roasted</span>
               </span>
             </h2>
-            <p className="text-black text40 w-[45%] mt-[2vw] leading-[1.1] mx-auto max-md:w-[90%]">
+            <p className="text-black text40 w-[45%] mt-[2vw] leading-[1.1] mx-auto max-md:w-[90%] font-oswald">
               Capey Bara is back and bolder than ever. Honoring our rich roots, we bring you the ultimate café experience — warm, aromatic, and crafted with love.
             </p>
           </div>
 
           <div className="mx-auto mt-[2vw] mb-[4vw] w-full max-md:mt-[6vw] max-md:mb-[8vw]">
-            <Button href="/menu">Order Now</Button>
+            <Button href="/menu.pdf" target="_blank">Order Now</Button>
           </div>
 
           <div className="relative grid h-fit w-full place-items-center px-[10vw] pb-[6vw] max-md:px-[4vw] max-md:pb-[12vw]">
@@ -405,7 +391,7 @@ export default function HomePage() {
               <Sticker imageSrc="/cafe/coffee-late.png" alt="Coffee Latte Sticker" rotate={0} />
             </div>
             <div className="w-[60vw] flex items-start gap-[2vw] justify-center flex-col self h-full max-md:w-full max-md:gap-[4vw] max-md:items-center max-md:h-fit px-[5vw]">
-              <p className="text-red -rotate-7 ml-[.5vw] uppercase text-stroke-180 font-modak leading-[.9]! text60 max-md:rotate-0 max-md:ml-0 max-md:translate-y-0 max-md:text-center">
+              <p className="text-red -rotate-7 ml-[.5vw] uppercase text-stroke-180 font-playfair leading-[.9]! text60 max-md:rotate-0 max-md:ml-0 max-md:translate-y-0 max-md:text-center">
                 TASTE IT
               </p>
               <h2 className="text-red text-stroke-180 heading300 uppercase leading-[.75] max-md:leading-[.85]! max-md:text-[10vw] max-md:text-center">
@@ -415,7 +401,7 @@ export default function HomePage() {
                 Poured for the bold, brewed for the cozy. Dive into a legendary café experience where every aromatic sip and house-baked bite warms your soul.
               </p>
               <div className="max-md:w-full max-md:flex max-md:justify-center pt-[2vw]">
-                <Button href="/menu" className="hover:scale-105 transition-transform">
+                <Button href="/menu.pdf" target="_blank" className="hover:scale-105 transition-transform">
                   Order Now
                 </Button>
               </div>
@@ -427,8 +413,8 @@ export default function HomePage() {
         </section>
 
         {/* ── 8. Footer ─────────────────────────────────────────────────── */}
-        <Footer />
-      </div>
+      </main>
+      <Footer reveal={true} />
     </>
   );
 }

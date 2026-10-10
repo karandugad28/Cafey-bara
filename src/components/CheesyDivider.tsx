@@ -52,7 +52,7 @@ export default function CheesyDivider() {
           <img src="/cafe/coffee-sticker-clear.png" alt="Cartoon coffee cup character" className="w-full h-auto" />
         </div>
         <div className="relative z-20 w-full flex flex-col items-center">
-          <p className="text-red absolute -rotate-8 max-md:rotate-0 text-stroke-180 text-center top-[5vw] max-md:top-[6vw] left-1/2 -translate-x-1/2 text-[2.8vw] max-md:text-[7vw] font-modak leading-[.9]! z-0 mix-blend-overlay opacity-80">
+          <p className="text-red absolute -rotate-8 max-md:rotate-0 text-stroke-180 text-center top-[5vw] max-md:top-[6vw] left-1/2 -translate-x-1/2 text-[2.8vw] max-md:text-[7vw] font-playfair leading-[.9]! z-0 mix-blend-overlay opacity-80">
             THE MOMENT
           </p>
           <h2 className="text-center heading300 uppercase max-md:text-[14vw] leading-[.75] w-full text-beige relative z-20 mt-[10vw] max-md:mt-[15vw]">
@@ -110,9 +110,7 @@ export default function CheesyDivider() {
               src="/cafe/pizza-with-hands.png"
               onLoad={() => ScrollTrigger.refresh()}
             />
-            <p className="text-mustard-dark absolute rotate-15 text-stroke-180 w-[10vw] max-md:w-[22vw] text-center bottom-[10vw] max-md:bottom-[10vw] right-[10vw] max-md:right-[8vw] text-[2.8vw] max-md:text-[6vw] font-modak leading-[.9]! z-30">
-              RICH AROMA
-            </p>
+
           </div>
           <div className="max-md:absolute max-md:bottom-[-15vw] max-md:right-0 z-20 max-md:text-right">
             <p className="text-beige font-mouse-memoirs uppercase leading-[1.1] text-right text40 max-md:text-[6vw] whitespace-nowrap">

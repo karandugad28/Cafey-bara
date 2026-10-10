@@ -126,7 +126,7 @@ body {
    ══════════════════════════════════════════════════════════════════════════ */
 
 .heading600 {
-  font-family: var(--font-modak);
+  font-family: var(--font-playfair);
   font-size: 35vw;
   line-height: 0.75;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .text60 {
-  font-family: var(--font-modak);
+  font-family: var(--font-playfair);
   font-size: 2.8vw;
 }
 
@@ -206,7 +206,7 @@ body {
 
 /* ── Country label ──────────────────────────────────────────────────────── */
 .country-label {
-  font-family: var(--font-modak);
+  font-family: var(--font-playfair);
   -webkit-text-stroke: 1px rgba(27, 79, 138, 0.2);
 }
 
@@ -617,8 +617,8 @@ html.lenis body {
   }
 }
 
-.font-anton {
-  font-family: var(--font-anton), sans-serif;
+.font-playfair {
+  font-family: var(--font-playfair), sans-serif;
 }
 
 .font-playfair {

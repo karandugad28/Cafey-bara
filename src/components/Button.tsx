@@ -8,6 +8,7 @@ interface ButtonProps {
   href: string;
   children: React.ReactNode;
   className?: string;
+  target?: string;
 }
 
 const defaultShape =
@@ -19,7 +20,7 @@ const hoverShapes = [
   "M326 0C491 34 591 147 525 255C452 373 345 468 202 405C131 369 34 297 35 201C37 77 186 -10 326 0Z",
 ];
 
-export default function Button({ href, children, className = "" }: ButtonProps) {
+export default function Button({ href, children, className = "", target }: ButtonProps) {
   const pathRef = useRef<SVGPathElement>(null);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
 
@@ -48,6 +49,7 @@ export default function Button({ href, children, className = "" }: ButtonProps) 
     <Link
       data-cursor-hide="true"
       href={href}
+      target={target}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`relative w-fit mx-auto border-none bg-transparent p-0 block cursor-pointer outline-none select-none ${className}`}

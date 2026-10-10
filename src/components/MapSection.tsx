@@ -7,11 +7,11 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import JellyDivider from "./JellyDivider";
 
 const desktopLocations = [
-  { src: "/img-webp/berlin.webp", alt: "Capey Bara artisan coffee in Berlin", country: "BERLIN", containerClass: "absolute right-[5vw] space-y-[1.5vw] z-[200] top-[50vw] items-end flex flex-col", noteClass: "text-red rotate-7 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/london.webp", alt: "Capey Bara artisan coffee in London", country: "LONDON", containerClass: "absolute left-[35vw] space-y-[1.5vw] z-[200] top-[64vw] items-start flex flex-col", noteClass: "text-red -rotate-7 text-left uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/newyork.webp", alt: "Capey Bara artisan coffee in New York", country: "NEW YORK", containerClass: "absolute right-[20vw] space-y-[1.5vw] z-[200] top-[80vw] items-end flex flex-col", noteClass: "text-red rotate-12 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/sydney.webp", alt: "Capey Bara artisan coffee in Sydney", country: "SYDNEY", containerClass: "absolute left-[15vw] space-y-[1.5vw] z-[200] top-[105vw] items-start flex flex-col", noteClass: "text-red -rotate-12 text-left uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
-  { src: "/img-webp/tokyo.webp", alt: "Capey Bara artisan coffee in Tokyo", country: "TOKYO", containerClass: "absolute right-[14vw] space-y-[1.5vw] z-[200] top-[130vw] items-end flex flex-col", noteClass: "text-red rotate-6 text-right uppercase text-stroke-small text40 font-modak leading-[.9]! country-label" },
+  { src: "/img-webp/berlin.webp", alt: "Capey Bara artisan coffee in Berlin", country: "BERLIN", containerClass: "absolute right-[5vw] space-y-[1.5vw] z-[200] top-[50vw] items-end flex flex-col", noteClass: "text-red rotate-7 text-right uppercase text-stroke-small text40 font-playfair leading-[.9]! country-label" },
+  { src: "/img-webp/london.webp", alt: "Capey Bara artisan coffee in London", country: "LONDON", containerClass: "absolute left-[35vw] space-y-[1.5vw] z-[200] top-[64vw] items-start flex flex-col", noteClass: "text-red -rotate-7 text-left uppercase text-stroke-small text40 font-playfair leading-[.9]! country-label" },
+  { src: "/img-webp/newyork.webp", alt: "Capey Bara artisan coffee in New York", country: "NEW YORK", containerClass: "absolute right-[20vw] space-y-[1.5vw] z-[200] top-[80vw] items-end flex flex-col", noteClass: "text-red rotate-12 text-right uppercase text-stroke-small text40 font-playfair leading-[.9]! country-label" },
+  { src: "/img-webp/sydney.webp", alt: "Capey Bara artisan coffee in Sydney", country: "SYDNEY", containerClass: "absolute left-[15vw] space-y-[1.5vw] z-[200] top-[105vw] items-start flex flex-col", noteClass: "text-red -rotate-12 text-left uppercase text-stroke-small text40 font-playfair leading-[.9]! country-label" },
+  { src: "/img-webp/tokyo.webp", alt: "Capey Bara artisan coffee in Tokyo", country: "TOKYO", containerClass: "absolute right-[14vw] space-y-[1.5vw] z-[200] top-[130vw] items-end flex flex-col", noteClass: "text-red rotate-6 text-right uppercase text-stroke-small text40 font-playfair leading-[.9]! country-label" },
 ];
 
 const mobileLocations = [
@@ -236,7 +236,7 @@ export default function MapSection() {
             </svg>
           </div>
           <div className="space-y-[2vw] mt-[20vw] relative z-10 text-center">
-            <p className="text-mustard-dark -rotate-7 ml-[1vw] -translate-y-[6vw] uppercase text-stroke-180 text-[2.8vw] font-modak leading-[.9]! inline-block">
+            <p className="text-mustard-dark -rotate-7 ml-[1vw] -translate-y-[6vw] uppercase text-stroke-180 text-[2.8vw] font-playfair leading-[.9]! inline-block">
               take away
             </p>
             <h2 className="text-white text-stroke-180-mustard heading300 w-[80vw] mx-auto leading-[.85]">
@@ -297,7 +297,7 @@ export default function MapSection() {
               className="flex flex-col items-center space-y-[3vw] w-fit relative z-10"
               style={{ cursor: "pointer", willChange: "transform" }}
             >
-              <p className="uppercase text-stroke-small text-[7vw] font-modak leading-snug country-label" style={{ willChange: "transform", cursor: "pointer" }}>
+              <p className="uppercase text-stroke-small text-[7vw] font-playfair leading-snug country-label" style={{ willChange: "transform", cursor: "pointer" }}>
                 {box.country}
               </p>
               <div className="w-[60vw] rounded-[5vw] overflow-hidden h-auto mx-auto bg-white/70 shadow-lg">

@@ -71,7 +71,7 @@ export default function IngredientsSection() {
       className="h-fit max-md:h-fit max-md:py-[14vw] w-full px-[2.5vw] relative"
     >
       <div className="h-fit pt-[2vw] relative z-100 space-y-[3vw] w-full max-md:space-y-[6vw]">
-        <p className="text-red -rotate-7 max-md:rotate-0 mx-auto uppercase text-stroke-180 text-center text-[2.8vw] max-md:text-[8vw] font-modak leading-[.9]!">
+        <p className="text-red -rotate-7 max-md:rotate-0 mx-auto uppercase text-stroke-180 text-center text-[2.8vw] max-md:text-[8vw] font-playfair leading-[.9]!">
           Pure Craft
         </p>
         <div className="max-md:mt-[10vw] flex flex-col gap-[1vw] w-full items-center justify-center">
